@@ -22,6 +22,7 @@ module.exports = {
     "@typescript-eslint"
   ],
   "ignorePatterns": [
+    "copyAssets.js",
     "copyplugin.js",
     "**/node_modules/**",
     "**/dist/**",

@@ -5,10 +5,11 @@
   "main": "./out/index.js",
   "repository": "",
   "scripts": {
+    "copyassets": "node copyAssets.js",
     "webpack": "node ./node_modules/webpack/bin/webpack --config webpack.config.js --progress",
     "bundle7z": "7z a -t7z distributable-extension.7z .\\dist\\*.*",
     "build": "npm run webpack && extractInfo",
-    "copyplugin": "node copyplugin.js",
+    "copyplugin": "yarn copyassets && node copyplugin.js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix"
   },
